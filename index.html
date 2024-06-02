@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Navigation Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="header">
+  <div class="container">
+    <a href="" class="Logo">Logo</a>
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="mobile-menu-toggle" class="mobile-menu-toggle">Menu</button>
+    <nav id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="content">
+  <section id="home">
+    <h1>Welcome to IT Solutions!</h1>
+    <p>We are delighted to have you here at IT Solutions , your one-stop destination for comprehensive IT services and solutions. Whether you're a business looking to enhance your IT infrastructure,
+       a professional seeking the latest industry insights, or someone in need of tech support, we have something for you.</p>
+    <p> Our Services:</p>
+    <p>1.Managed IT Services: From proactive monitoring to dedicated support, we manage your IT so you can focus on your core business.</p>
+    <p>1.Cybersecurity: Protect your data with our advanced security solutions tailored to meet the unique needs of your business.</p>
+    <p>3.Cloud Solutions: Leverage the power of the cloud with our scalable and efficient cloud computing services.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate professionals dedicated to providing top-notch solutions for your business needs.
+      years of experience in the industry, we strive to deliver innovative and tailored services to help you achieve your goals.</p>
+      <ul>
+     <li> Our Mission: Briefly state your company's mission, e.g. "To provide innovative and reliable IT solutions that empower businesses to thrive."</li>
+     <li> Our Story: Share a concise history of your company, including its founding and any major milestones.</li>
+     <li>Our Values: Highlight the core values that guide your company culture, e.g. excellence, collaboration, and customer focus.</li>
+     <li>What We Do: Describe the IT services you offer, focusing on the problems you solve for clients.</li>
+     <li>Why Choose Us: Concisely explain what makes your company unique and the benefits you bring to clients, e.g. experienced team, proven track record, and commitment to client satisfaction.</li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>
+      Here are some of the key benefits you'll enjoy when you partner with us.</p>
+      <p>
+      <ul>
+        <li>Efficiency and Productivity: Our solutions can help streamline your operations and improve workflow, freeing up your team to focus on core business activities.</li>
+        <li>Enhanced Security: We offer robust security solutions to protect your valuable data from cyber threats.</li>
+        <li>Improved Scalability: Our services are designed to grow with your business, so you can be confident that your IT infrastructure will support your future needs.</li>
+        <li>Reduced Costs: By optimizing your IT systems and preventing downtime, we can help you save money on your IT expenses.</li>
+        <li>Peace of Mind: With our proactive approach to IT management, you can rest assured knowing your technology is in good hands.</li>
+    </ul> 
+    </p>
+      
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to contact us using the information below:</p>
+    <p>Email: info@example.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+        <li>SEO Optimization</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>We are a team of passionate professionals dedicated to providing top-notch solutions for your business needs. With years of experience in the industry, we strive to deliver innovative and tailored services to help you achieve your goals.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or inquiries, feel free to contact us using the information below:</p>
+      <p>Email: info@example.com</p>
+      <p>Phone: +1 (123) 456-7890</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.menu ul li a, #mobile-menu ul li a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelectorAll('.menu ul li a, #mobile-menu ul li a').forEach(item => {
+        item.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

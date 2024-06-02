@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background: black;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+header .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .menu ul li {
+  margin-left: 20px;
+}
+
+header .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header .menu ul li a:hover {
+  background: black;
+  color: #fff;
+}
+
+header .menu ul li a.active {
+  background: #ff6600;
+  color: #fff;
+}
+
+#mobile-menu-toggle {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu ul li {
+  margin: 10px 0;
+}
+
+#mobile-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mobile-menu.active {
+  display: block;
+}
+
+.content {
+  padding: 100px 20px 20px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+#home {
+  background: white;
+  color: black;
+}
+
+#about {
+  background: white;
+  color: black;
+}
+
+#services {
+  background: white;
+  color: black;
+}
+
+#contact {
+  background: white;
+  color: black;
+}
+
+.footer {
+  background: black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-section {
+  width: 30%;
+}
+
+.footer .footer-section h3 {
+  margin-top: 0;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #mobile-menu-toggle {
+    display: block;
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  #mobile-menu.active {
+    display: block;
+  }
+}
+.content h1,p,li{
+  text-align: center;
+}
+.content h2,p,li{
+  text-align: center;
+}
